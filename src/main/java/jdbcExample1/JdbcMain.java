@@ -16,7 +16,7 @@ public class JdbcMain {
             Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE);
             DatabaseMetaData metaData = connection.getMetaData();  // zczytuje dane  informacje o danych, np, wersja bazy danych, informacje ,werjse driverowi itp
             if (metaData.supportsResultSetConcurrency(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE))
-                System.out.println("kotek");
+                System.out.println("baza jest updateTable - zaktualizowana");
 
             //CONCUR_READ_ONLY,ResultSet.CONCUR_UPDATABLE - pytamy czy jest tego typu
             // _FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE - ustawienie defualt, jak bedziemy przegladac wyniki to bedziemy mogli je przesuwac tlyko w jednoa storne do przodu,/ ca - oprucz przeczytania wynikow z sql, bedziemy mogli etez zmieniac dane w bazie danych/ // var. - wyciaga zmienna,generuje
@@ -35,6 +35,7 @@ public class JdbcMain {
                 String TableName = tables.getString(3);
                 System.out.println(BazaDanych + " " + TableName);
             }
+            connection.close();  // zamkniecie polaczenia z baza danych
 // ctrl + alt+v
         } catch (SQLException e) {
             e.printStackTrace();
