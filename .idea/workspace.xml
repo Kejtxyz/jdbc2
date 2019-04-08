@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jdbcExample1/JdbcMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="405">
+              <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -105,7 +105,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554744203721" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554745897356" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1554744071504</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="zamkniecie polaczenia z baza danych&#10;&#10;bazy danych  - polaczenie - jdbc - sql&#10;zmiana z trenerow na tablice zawodnikow z workbeach">
+      <created>1554744224916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554744224916</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -206,7 +213,7 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2956989" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29301074" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,7 +232,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="bazy danych  - polaczenie - jdbc - sql" />
     <MESSAGE value="bazy danych  - polaczenie - jdbc - sql&#10;zmiana z trenerow na tablice zawodnikow z workbeach" />
-    <option name="LAST_COMMIT_MESSAGE" value="bazy danych  - polaczenie - jdbc - sql&#10;zmiana z trenerow na tablice zawodnikow z workbeach" />
+    <MESSAGE value="zamkniecie polaczenia z baza danych&#10;&#10;bazy danych  - polaczenie - jdbc - sql&#10;zmiana z trenerow na tablice zawodnikow z workbeach" />
+    <option name="LAST_COMMIT_MESSAGE" value="zamkniecie polaczenia z baza danych&#10;&#10;bazy danych  - polaczenie - jdbc - sql&#10;zmiana z trenerow na tablice zawodnikow z workbeach" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
@@ -251,8 +259,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jdbcExample1/JdbcMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="405">
+          <caret line="42" column="16" lean-forward="true" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
         </state>
       </provider>
     </entry>

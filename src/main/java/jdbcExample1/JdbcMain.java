@@ -26,14 +26,21 @@ public class JdbcMain {
                 String nazwisko = resultSet.getString("nazwisko");
                 int wzrost = resultSet.getInt("wzrost");
                 System.out.println(imie + " " + nazwisko +" " + wzrost);
-             //   resultSet.updateString("imie","Marcin");
+                resultSet.updateString("imie","Marcin");
+                resultSet.updateRow();
+                resultSet.getString("imie");
                 System.out.println(imie + " " + nazwisko +" " + wzrost);
             }
             ResultSet tables = metaData.getTables(null, null, "zawodnicy", null);// jesli jest null to pobierane sa wszystkie tablice ze wszystkich baz danych,jakie sa.
+            resultSet.moveToInsertRow();
+            resultSet.updateString("imie", "Kasia");
+            resultSet.insertRow();
+            resultSet.beforeFirst();
             while (tables.next()){
                 String BazaDanych = tables.getString(1);
                 String TableName = tables.getString(3);
                 System.out.println(BazaDanych + " " + TableName);
+                
             }
             connection.close();  // zamkniecie polaczenia z baza danych
 // ctrl + alt+v
