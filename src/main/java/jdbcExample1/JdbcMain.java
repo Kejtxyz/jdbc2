@@ -14,7 +14,7 @@ public class JdbcMain {
         try {
             Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
             Statement statement = connection.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE);
-            DatabaseMetaData metaData = connection.getMetaData();
+            DatabaseMetaData metaData = connection.getMetaData();  // zczytuje dane  informacje o danych, np, wersja bazy danych, informacje ,werjse driverowi itp
             if (metaData.supportsResultSetConcurrency(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONCUR_UPDATABLE))
                 System.out.println("kotek");
 
@@ -26,9 +26,16 @@ public class JdbcMain {
                 String nazwisko = resultSet.getString("nazwisko");
                 int wzrost = resultSet.getInt("wzrost");
                 System.out.println(imie + " " + nazwisko +" " + wzrost);
-                resultSet.updateString("imie","Marcin");
+             //   resultSet.updateString("imie","Marcin");
                 System.out.println(imie + " " + nazwisko +" " + wzrost);
             }
+            ResultSet tables = metaData.getTables(null, null, "zawodnicy", null);// jesli jest null to pobierane sa wszystkie tablice ze wszystkich baz danych,jakie sa.
+            while (tables.next()){
+                String BazaDanych = tables.getString(1);
+                String TableName = tables.getString(3);
+                System.out.println(BazaDanych + " " + TableName);
+            }
+// ctrl + alt+v
         } catch (SQLException e) {
             e.printStackTrace();
         }
